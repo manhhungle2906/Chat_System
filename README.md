@@ -1,7 +1,5 @@
 # Distributed System Chat System - Full Functionalities Overview
 
-This is a multi-user, multi-channel chat system built using Python and TCP sockets. It supports real-time messaging, private messages, file transfers, and various safety and scalability features.
-
 ---
 
 ## ✅ 1. Core Functionalities
@@ -14,7 +12,6 @@ This is a multi-user, multi-channel chat system built using Python and TCP socke
 | **Active Channel Management**          | Messages are sent/received only within the active channel |
 | **Private Messaging**                  | Use `/pm` to send direct messages to specific users |
 | **Broadcast Messaging**                | Send messages to all users in the same active channel |
-| **File Transfer over TCP**             | Send files (including images) using `/sendfile <nickname> <filepath>` |
 | **Terminal-based Interface**           | Fully CLI-based for easy usage and testing |
 
 ---
@@ -29,7 +26,6 @@ This is a multi-user, multi-channel chat system built using Python and TCP socke
 | `/channels`               | List all active channels |
 | `/whoami`                 | Show your nickname and joined channels |
 | `/pm <nickname> <msg>`    | Send a private message |
-| `/sendfile <nickname> <path>` | Send a file to a user |
 | `/help`                   | Show list of available commands |
 | `/quit`                   | Disconnect from server |
 
@@ -44,7 +40,6 @@ This is a multi-user, multi-channel chat system built using Python and TCP socke
 | **Room Capacity Limit**            | Max 10 users per room |
 | **Nickname Uniqueness Check**      | Prevent duplicate nicknames |
 | **Message Validation**             | Prevent empty or malformed messages |
-| **File Transfer Validation**       | Check if file exists and if target user is valid |
 | **Command Validation**             | Unknown or incorrect commands are rejected |
 | **Exception Handling**             | Prevent crashes and disconnects from breaking the system |
 
